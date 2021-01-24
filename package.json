@@ -3,30 +3,23 @@
   "version": "1.0.0",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack serve --mode development --env development",
+    "prebuild": "rm -rf dist",
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html",
     "lint": "eslint 'src/**/*.ts*' --ignore-path=.eslintignore --config=.eslintrc.json"
   },
   "devDependencies": {
     "@types/html-webpack-plugin": "^3.2.3",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
-    "@types/webpack": "^4.41.22",
-    "@types/webpack-dev-server": "^3.11.0",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
-    "clean-webpack-plugin": "^3.0.0",
     "eslint": "^7.11.0",
     "eslint-plugin-react": "^7.21.4",
-    "html-loader": "^1.3.2",
-    "html-webpack-plugin": "^4.5.0",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "ts-loader": "^8.0.5",
-    "typescript": "^4.0.3",
-    "webpack": "^5.1.3",
-    "webpack-cli": "^4.0.0",
-    "webpack-dev-server": "^3.11.0"
+    "typescript": "^4.0.3"
   }
 }
