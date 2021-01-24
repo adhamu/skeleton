@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "esnext",
     "target": "es5",
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "./dist/",
     "jsx": "react",
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "baseUrl": ".",
+    "skipLibCheck": true,
     "paths": {
       "@global/*": ["src/*"]
     }

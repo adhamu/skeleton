@@ -1,8 +1,8 @@
-import * as path from 'path'
-import * as HtmlWebPackPlugin from 'html-webpack-plugin'
-import * as webpack from 'webpack'
+const path = require('path')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-const config: webpack.Configuration = {
+module.exports = {
   entry: './src/index.tsx',
   devServer: {
     historyApiFallback: true,
@@ -34,16 +34,15 @@ const config: webpack.Configuration = {
     },
   },
   output: {
-    filename: 'bundle.js',
+    filename: 'bundle.[fullhash].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: './src/templates/index.html',
       filename: './index.html',
     }),
   ],
 }
-
-export default config
