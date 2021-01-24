@@ -4,8 +4,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "parcel build src/index.html",
-    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-source-maps",
+    "dev": "parcel src/index.html --open",
     "lint": "eslint 'src/**/*.ts*' --ignore-path=.eslintignore --config=.eslintrc.json"
   },
   "devDependencies": {
