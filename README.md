@@ -13,6 +13,11 @@ A skeleton boilerplate repo for a React app.
 - ESLint
 - Prettier
 
+## Testing
+
+- Jest
+- Testing Library
+
 ## Getting Started
 
 This repository is set as a template.

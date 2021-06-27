@@ -9,9 +9,6 @@
     "jsx": "react",
     "noImplicitAny": true,
     "baseUrl": ".",
-    "skipLibCheck": true,
-    "paths": {
-      "+global/*": ["src/*"]
-    }
+    "skipLibCheck": true
   }
 }
