@@ -10,8 +10,7 @@ A skeleton boilerplate repo for a React app.
 ## Tooling
 
 - Parcel
-- ESLint
-- Prettier
+- [Zero](https://github.com/adhamu/zero)
 
 ## Testing
 
