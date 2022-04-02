@@ -6,6 +6,7 @@ A skeleton boilerplate repo for a React app.
 
 - React
 - Typescript
+- SCSS Modules
 
 ## Tooling
 
