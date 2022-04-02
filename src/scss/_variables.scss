@@ -5,6 +5,7 @@
 
   --colour-body: #444;
   --colour-background: #fff;
+
   --colour-yellow: #ffd800;
   --colour-pink: #f09;
   --colour-lime: #b0eb00;
@@ -19,4 +20,9 @@
   --colour-tundora: #444;
   --colour-mine-shaft: #363636;
   --colour-cod-gray: #111;
+}
+
+.dark-mode {
+  --colour-body: #fff;
+  --colour-background: #444;
 }
