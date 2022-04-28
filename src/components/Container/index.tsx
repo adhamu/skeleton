@@ -5,7 +5,7 @@ type Props = {
 }
 
 const Container = ({ children }: Props): JSX.Element => (
-  <div className={styles.Container}>{children}</div>
+  <div className={styles.container}>{children}</div>
 )
 
 export default Container

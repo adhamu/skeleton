@@ -1,12 +1,14 @@
 {
   "name": "skeleton",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "parcel build src/index.html --no-source-maps",
     "dev": "parcel src/index.html --open",
-    "lint": "eslint 'src/**/*.ts*' --ignore-path=.eslintignore --config=.eslintrc.json",
+    "lint": "yarn lint:scripts && yarn lint:styles",
+    "lint:scripts": "eslint 'src/**/*.ts*' --ignore-path=.eslintignore --config=.eslintrc.json",
+    "lint:styles": "stylelint 'src/**/*.scss'",
     "test": "jest --colors"
   },
   "dependencies": {
@@ -14,9 +16,9 @@
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "@adhamu/zero": "^4.1.1",
+    "@adhamu/zero": "^4.2.0",
     "@parcel/transformer-sass": "2.5.0",
-    "@swc/core": "^1.2.172",
+    "@swc/core": "^1.2.173",
     "@swc/jest": "^0.2.20",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",

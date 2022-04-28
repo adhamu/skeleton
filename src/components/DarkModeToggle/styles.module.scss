@@ -4,7 +4,8 @@
   overflow: hidden;
   width: 62px;
   height: 32px;
-  border: none;
+  border: 0;
+  // stylelint-disable property-no-vendor-prefix
   -webkit-appearance: none;
   background-color: var(--colour-scorpion);
   border-radius: 4px;
@@ -12,7 +13,7 @@
   outline: none;
   transition: background-color ease 0.3s;
 
-  &:before {
+  &::before {
     position: absolute;
     z-index: 2;
     top: 2px;
@@ -37,7 +38,7 @@
     background-color: var(--colour-cyan);
   }
 
-  &:checked:before {
+  &:checked::before {
     left: 32px;
   }
 }
