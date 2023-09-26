@@ -5,10 +5,10 @@
   width: 62px;
   height: 32px;
   border: 0;
+  border-radius: 4px;
   // stylelint-disable property-no-vendor-prefix
   -webkit-appearance: none;
   background-color: var(--colour-scorpion);
-  border-radius: 4px;
   cursor: pointer;
   outline: none;
   transition: background-color ease 0.3s;
@@ -21,8 +21,8 @@
     display: block;
     width: 28px;
     height: 28px;
-    background: var(--colour-background);
     border-radius: 4px;
+    background: var(--colour-background);
     color: var(--colour-background);
     content: 'on off';
     font: 10px/28px Helvetica;
