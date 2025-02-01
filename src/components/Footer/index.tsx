@@ -1,8 +1,8 @@
 import Container from '../Container'
 
-import styles from './styles.module.scss'
+import styles from './styles.module.css'
 
-const Footer = (): JSX.Element => (
+const Footer = () => (
   <footer className={styles.footer}>
     <Container>Copyright &copy; {new Date().getFullYear()}</Container>
   </footer>

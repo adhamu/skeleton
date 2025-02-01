@@ -3,9 +3,9 @@ import DarkModeToggle from './components/DarkModeToggle'
 import Footer from './components/Footer'
 import Header from './components/Header'
 
-import './scss/main.scss'
+import './styles/main.css'
 
-const App = (): JSX.Element => (
+const App = () => (
   <>
     <Header />
     <DarkModeToggle />

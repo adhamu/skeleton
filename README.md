@@ -6,12 +6,12 @@ A skeleton boilerplate repo for a React app.
 
 - React
 - Typescript
-- SCSS Modules
+- CSS Modules
 - Dark Mode Toggle
 
 ## Tooling
 
-- Parcel
+- [Vite](https://vite.dev)
 - [Zero](https://github.com/adhamu/zero)
 
 ## Testing
@@ -39,7 +39,7 @@ $ yarn
 $ yarn dev
 ```
 
-Open up [http://localhost:1234](http://localhost:1234)
+Open up [http://localhost:5173](http://localhost:5173)
 
 ## Production
 

@@ -1,10 +1,12 @@
-import styles from './styles.module.scss'
+import styles from './styles.module.css'
+
+import type { ReactNode } from 'react'
 
 type Props = {
-  children: React.ReactNode
+  children: ReactNode
 }
 
-const Container = ({ children }: Props): JSX.Element => (
+const Container = ({ children }: Props) => (
   <div className={styles.container}>{children}</div>
 )
 

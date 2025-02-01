@@ -16,7 +16,7 @@ module.exports = {
   },
   testEnvironment: 'jsdom',
   transformIgnorePatterns: [],
-  setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+  setupFilesAfterEnv: ['<rootDir>/test-setup.ts'],
   moduleNameMapper: {
     '^.+\\.(css|scss)$': '@swc/jest',
   },
