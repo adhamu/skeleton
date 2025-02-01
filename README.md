@@ -12,6 +12,7 @@ A skeleton boilerplate repo for a React app.
 ## Tooling
 
 - [Vite](https://vite.dev)
+- [React Router](https://reactrouter.com)
 - [Zero](https://github.com/adhamu/zero)
 
 ## Testing

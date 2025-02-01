@@ -34,7 +34,7 @@
   }
 
   &:checked {
-    background-color: var(--colour-cyan);
+    background-color: var(--colour-heliotrope);
   }
 
   &:checked::before {

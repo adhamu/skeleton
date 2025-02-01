@@ -1,0 +1,22 @@
+.nav {
+  margin: 1rem 0 2rem;
+
+  ul {
+    display: flex;
+    align-items: flex-start;
+    list-style-type: none;
+
+    li {
+      padding-bottom: 0.4em;
+      margin-right: 2rem;
+
+      a {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.active {
+  border-bottom: 6px solid var(--colour-heliotrope);
+}

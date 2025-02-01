@@ -21,3 +21,9 @@ body {
 h4 {
   margin-bottom: 1rem;
 }
+
+a,
+a:visited {
+  color: var(--colour-body);
+  text-decoration: none;
+}
