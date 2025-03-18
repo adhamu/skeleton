@@ -1,5 +1,7 @@
+const baseConfig = require('@adhamu/zero/jest')
+
 module.exports = {
-  ...require('@adhamu/zero/jest'),
+  ...baseConfig,
   transform: {
     '^.+\\.ts(x)?$': [
       '@swc/jest',
@@ -16,7 +18,7 @@ module.exports = {
   },
   testEnvironment: 'jsdom',
   transformIgnorePatterns: [],
-  setupFilesAfterEnv: ['<rootDir>/test-setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/jest.preset.ts'],
   moduleNameMapper: {
     '^.+\\.(css|scss)$': '@swc/jest',
   },
